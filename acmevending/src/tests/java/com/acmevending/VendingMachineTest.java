@@ -24,44 +24,35 @@ public class VendingMachineTest {
 
         expected = new int[]{0, 0 ,0, 2};
         actual = machine.calculateChange(pa1, ta2);
-        System.out.println(actual);
         assertArrayEquals(expected, actual);
 
         expected = new int[]{0, 1, 1, 4};
         actual = machine.calculateChange(pa1, ta3);
-        System.out.println(actual);
         assertArrayEquals(expected, actual);
 
         expected = new int[]{3, 0, 2, 36};
         actual = machine.calculateChange(pa1, ta4);
-        System.out.println(actual);
         assertArrayEquals(expected, actual);
 
         expected = new int[]{2, 1 ,0, 0};
-        actual = machine.calculateChange(pa2, ta1);
-        System.out.println(actual);
         assertArrayEquals(expected, actual);
 
         machine = new VendingMachine(BRITISH_POUND);
 
         expected = new int[]{0, 0, 0, 0, 0, 0};
         actual = machine.calculateChange(pa1, ta1);
-        System.out.println(actual);
         assertArrayEquals(expected, actual);
 
         expected = new int[]{0, 1, 1, 0, 0, 1};
         actual = machine.calculateChange(pa2, ta2);
-        System.out.println(actual);
         assertArrayEquals(expected, actual);
 
         expected = new int[]{0, 1, 0, 0, 1, 2};
         actual = machine.calculateChange(pa2, ta3);
-        System.out.println(actual);
         assertArrayEquals(expected, actual);
 
         expected = new int[]{0, 0, 0, 1, 1, 18};
         actual = machine.calculateChange(pa2, ta4);
-        System.out.println(actual);
         assertArrayEquals(expected, actual);
     }
 
